@@ -28,9 +28,26 @@ The following derivables for this project.
 
 > **Ask**
 
-How do annual members and casual riders use Cyclistics
-differently?
 The main goal is to design marketing strategies aimed at converting casual riders into annual members.
+
+
+> **Prepare** 
+
+#Data: 
+The data has been made available by Motivate International Inc. under this [license](https://ride.divvybikes.com/data-license-agreement). 
+ Due to data-privacy, any personally-identifiable information has been removed/encrypted.
+
+
+The past 12 months of Cyclistic trip data will be used to explore how different customer types are
+using Cyclistic bikes. The data is organized by month from January 2021 to December 2021. 
+The data included information about the Ride_id, type of ride , start date and time and location,
+type of members, trip length, and locations.
+
+
+> **Process**
+
+
+> **Analyze**
 
 
 
