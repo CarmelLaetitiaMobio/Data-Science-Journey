@@ -4,6 +4,21 @@ Working on building my portfolio
 
 **Project 1: Cyclistic_CaseStudy**
 
+I completed the Google Data Analytics Professional Certificate. I will be working on one of the case study we have available on the website. 
+
+[Cyclsitic](https://www.coursera.org/learn/google-data-analytics-capstone/supplement/7PGIT/case-study-1-how-does-a-bike-share-navigate-speedy-success)
+
+A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with
+disabilities and riders who can’t use a standard two-wheeled bike. The majority of riders opt for traditional bikes; about
+8% of riders use the assistive options. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day
+
+> **Scenario**
+
+I am a junior data analyst working in the marketing analyst team for the past six(6) months at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members.
+But first, Cyclistic executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
+
+The following derivables for this project.
+
 - A clear statement of the business task
 - A description of all data sources used
 - Documentation of any cleaning or manipulation of data
@@ -11,10 +26,11 @@ Working on building my portfolio
 - Supporting visualizations and key findings
 - three recommendations based on analysis
 
+> **Ask**
+
+How do annual members and casual riders use Cyclistics
+differently?
+The main goal is to design marketing strategies aimed at converting casual riders into annual members.
 
 
-**Project 2: BellaBeat_CaseStudy**
 
-1. What are some trends in smart device usage?
-2. How could these trends apply to Bellabeat customers?
-3. How could these trends help influence Bellabeat marketing strategy?
