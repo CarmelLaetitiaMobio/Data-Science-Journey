@@ -116,12 +116,14 @@ I calculated the mean of ride_length, the max ride_length and the mode of day_of
 
 summary(biketrip_2021)
 ```
+
 ```
 #table for member and casual trips 
 table(biketrip_2021$member_casual) 
 # table for bike type
 table(biketrip_2021$rideable_type)
 ```
+
 ```
 #some more data
 #date for all the biketrip_display month of January
@@ -133,6 +135,7 @@ biketrip_2021$day_of_week <- format(as.Date(biketrip_2021$date), "%A")
 ```
 
 I calculated the length of each ride:
+
 ```
 #calculate ride length
 biketrip_2021$ride_length <- difftime(biketrip_2021$ended_at, biketrip_2021$started_at)
