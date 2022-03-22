@@ -43,6 +43,16 @@ using Cyclistic bikes. The data is organized by month from January 2021 to Decem
 The data included information about the Ride_id, type of ride , start date and time and location,
 type of members, trip length, and locations.
 
+#R-Code
+
+```R
+##Installing packages
+
+`install.packages("tidyverse")`
+`install.packages("leaflet")`
+`install.packages("mapview") `
+```
+
 
 > **Process**
 
