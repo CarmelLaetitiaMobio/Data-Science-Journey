@@ -66,22 +66,21 @@ library(lealflet)#mapping
 
 ##upload all .csv files on R
 
-m1<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202101-divvy-tripdata.csv")
-m2<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202102-divvy-tripdata.csv")
-m3<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202103-divvy-tripdata.csv")
-m4<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202104-divvy-tripdata.csv")
-m5<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202105-divvy-tripdata.csv")
-m6<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202106-divvy-tripdata.csv")
-m7<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202107-divvy-tripdata.csv")
-m8<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202108-divvy-tripdata.csv")
-m9<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202109-divvy-tripdata.csv")
-m10<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202110-divvy-tripdata.csv")
-m11<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202111-divvy-tripdata.csv")
-m12<- read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202112-divvy-tripdata.csv")
+m1 <- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202101-divvy-tripdata.csv")
+m2<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202102-divvy-tripdata.csv")
+m3<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202103-divvy-tripdata.csv")
+m4<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202104-divvy-tripdata.csv")
+m5<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202105-divvy-tripdata.csv")
+m6<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202106-divvy-tripdata.csv")
+m7<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202107-divvy-tripdata.csv")
+m8<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202108-divvy-tripdata.csv")
+m9<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202109-divvy-tripdata.csv")
+m10<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202110-divvy-tripdata.csv")
+m11<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202111-divvy-tripdata.csv")
+m12<- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202112-divvy-tripdata.csv")
 
 ##Clean the data 
-##Removed columns start_station_id	end_station_name	end_station_id(empty rows) 
-
+##removed start_station_id	end_station_name	end_station_id
 m1_2021=select(m1, -start_station_id,-end_station_name,-end_station_id)
 m2_2021=select(m2, -start_station_id,-end_station_name,-end_station_id)
 m3_2021=select(m3, -start_station_id,-end_station_name,-end_station_id)
@@ -97,12 +96,13 @@ m12_2021=select(m12, -start_station_id,-end_station_name,-end_station_id)
 
 ##Combine the files together in one database
 
-biketrip_2021<-(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
+biketrip_2021<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
 
 ##descriptive analysis
 
 # mean,median,25th and 75th quartiles,min,max
 summary(biketrip_2021)
+
 
 #table for member and casual trips 
 table(biketrip_2021$member_casual) 
