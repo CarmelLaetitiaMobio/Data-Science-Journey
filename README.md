@@ -84,14 +84,14 @@ The command view will allow us to view the first couple information for the mont
 ```
 View(m1)
 ```
+![view head jan 2021](https://user-images.githubusercontent.com/82397900/159413750-ab468211-6c5f-491f-8184-29976f42fb7b.jpg)
 
 <img width="353" alt="image" src="https://user-images.githubusercontent.com/82397900/159413659-4aaadebb-95d7-4ed2-a6d7-13799d01e9ec.png">
 
 > **Process**
 
 
-After reading some of the excel sheets, I saw some missing values so I decided to remove these columns.
-##removed start_station_id	end_station_name	end_station_id
+After viewing some of the excel sheet like the month of January, I saw some missing values so to clean the data I removed the following columns: start_station_id	end_station_name	end_station_id. 
 
 
 ```
