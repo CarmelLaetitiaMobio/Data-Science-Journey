@@ -78,9 +78,12 @@ m9<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Projec
 m10<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202110-divvy-tripdata.csv")
 m11<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202111-divvy-tripdata.csv")
 m12<- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202112-divvy-tripdata.csv")
-
-##Clean the data 
+```
+After reading some of the excel sheets, I saw some missing values so I decided to remove these columns.
 ##removed start_station_id	end_station_name	end_station_id
+```
+##Clean the data 
+
 m1_2021=select(m1, -start_station_id,-end_station_name,-end_station_id)
 m2_2021=select(m2, -start_station_id,-end_station_name,-end_station_id)
 m3_2021=select(m3, -start_station_id,-end_station_name,-end_station_id)
@@ -93,11 +96,18 @@ m9_2021=select(m9, -start_station_id,-end_station_name,-end_station_id)
 m10_2021=select(m10, -start_station_id,-end_station_name,-end_station_id)
 m11_2021=select(m11, -start_station_id,-end_station_name,-end_station_id)
 m12_2021=select(m12, -start_station_id,-end_station_name,-end_station_id)
+```
+I merged all the excel files into a single dataframe
 
+```
 ##Combine the files together in one database
 
 biketrip_2021<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
+```
 
+
+> **Process**
+```
 ##descriptive analysis
 
 # mean,median,25th and 75th quartiles,min,max
@@ -126,8 +136,6 @@ biketrip_2021_v2 <- biketrip_2021[!(biketrip_2021$rideable_type == "docked_bike"
 
 ```
 
-
-> **Process**
 
 
 > **Analyze**
