@@ -81,8 +81,12 @@ m12<- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Proj
 ```
 
 > **Process**
+
+
 After reading some of the excel sheets, I saw some missing values so I decided to remove these columns.
 ##removed start_station_id	end_station_name	end_station_id
+
+
 ```
 ##Clean the data 
 
