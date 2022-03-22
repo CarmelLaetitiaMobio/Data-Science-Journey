@@ -111,8 +111,6 @@ table(biketrip_2021$rideable_type)
 
 
 
-
-
 ```
 
 
