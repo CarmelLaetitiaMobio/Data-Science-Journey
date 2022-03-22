@@ -44,6 +44,7 @@ The data included information about the Ride_id, type of ride , start date and t
 type of members, trip length, and locations.
 
 
+
 #R-Code
 
 ```R
@@ -79,11 +80,31 @@ m11<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divv
 m12<- read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202112-divvy-tripdata.csv")
 
 ##Clean the data 
+##Removed columns start_station_id	end_station_name	end_station_id(empty rows) 
 
+m1_2021=select(m1, -start_station_id,-end_station_name,-end_station_id)
+m2_2021=select(m2, -start_station_id,-end_station_name,-end_station_id)
+m3_2021=select(m3, -start_station_id,-end_station_name,-end_station_id)
+m4_2021=select(m4, -start_station_id,-end_station_name,-end_station_id)
+m5_2021=select(m5, -start_station_id,-end_station_name,-end_station_id)
+m6_2021=select(m6, -start_station_id,-end_station_name,-end_station_id)
+m7_2021=select(m7, -start_station_id,-end_station_name,-end_station_id)
+m8_2021=select(m8, -start_station_id,-end_station_name,-end_station_id)
+m9_2021=select(m9, -start_station_id,-end_station_name,-end_station_id)
+m10_2021=select(m10, -start_station_id,-end_station_name,-end_station_id)
+m11_2021=select(m11, -start_station_id,-end_station_name,-end_station_id)
+m12_2021=select(m12, -start_station_id,-end_station_name,-end_station_id)
 
 ##Combine the files together in one database
 
-all_trips <- bind_rows(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12)
+all_trips<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
+
+##descriptive analysis
+
+
+# mean,median,25th and 75th quartiles,min,max
+summary(biketrip_2021)
+
 
 
 
