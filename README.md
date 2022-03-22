@@ -147,6 +147,8 @@ biketrip_2021_v2 <- biketrip_2021[!(biketrip_2021$rideable_type == "docked_bike"
 ```
 
 
+> ** Share **
+
 
 
 
