@@ -79,6 +79,13 @@ m10<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Proje
 m11<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202111-divvy-tripdata.csv")
 m12<- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202112-divvy-tripdata.csv")
 ```
+The command view will allow us to view the first couple information for the month of January 2021
+
+```
+View(m1)
+```
+
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/82397900/159413659-4aaadebb-95d7-4ed2-a6d7-13799d01e9ec.png">
 
 > **Process**
 
