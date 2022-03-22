@@ -97,7 +97,7 @@ m12_2021=select(m12, -start_station_id,-end_station_name,-end_station_id)
 
 ##Combine the files together in one database
 
-all_trips<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
+biketrip_2021<-(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
 
 ##descriptive analysis
 
