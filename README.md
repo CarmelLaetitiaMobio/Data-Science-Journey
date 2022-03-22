@@ -129,6 +129,7 @@ biketrip_2021$day <- format(as.Date(biketrip_2021$date), "%d")
 biketrip_2021$year <- format(as.Date(biketrip_2021$date), "%Y")
 biketrip_2021$day_of_week <- format(as.Date(biketrip_2021$date), "%A")
 ```
+> **Analyze**
 I calculated the length of each ride:
 ```
 #calculate ride length
@@ -136,7 +137,7 @@ biketrip_2021$ride_length <- difftime(biketrip_2021$ended_at, biketrip_2021$star
 biketrip_2021_v2 <- biketrip_2021[!(biketrip_2021$rideable_type == "docked_bike" | biketrip_2021$ride_length<0),]
 ```
 
-> **Analyze**
+
 
 
 
