@@ -130,6 +130,8 @@ biketrip_2021$year <- format(as.Date(biketrip_2021$date), "%Y")
 biketrip_2021$day_of_week <- format(as.Date(biketrip_2021$date), "%A")
 ```
 > **Analyze**
+
+
 I calculated the length of each ride:
 ```
 #calculate ride length
