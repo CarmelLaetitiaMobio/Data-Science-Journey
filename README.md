@@ -79,6 +79,8 @@ m10<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Proje
 m11<-read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202111-divvy-tripdata.csv")
 m12<- read.csv("C:\\Users\\carme\\OneDrive\\Documents\\R work\\p1\\datacyc\\Project1\\divvy-trip data\\202112-divvy-tripdata.csv")
 ```
+
+> **Process**
 After reading some of the excel sheets, I saw some missing values so I decided to remove these columns.
 ##removed start_station_id	end_station_name	end_station_id
 ```
@@ -105,8 +107,8 @@ I merged all the excel files into a single dataframe
 biketrip_2021<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_2021,m9_2021,m10_2021,m11_2021,m12_2021)
 ```
 
+> **Analyze**
 
-> **Process**
 
 I calculated the mean of ride_length, the max ride_length and the mode of day_of_week
 ```
@@ -129,8 +131,6 @@ biketrip_2021$day <- format(as.Date(biketrip_2021$date), "%d")
 biketrip_2021$year <- format(as.Date(biketrip_2021$date), "%Y")
 biketrip_2021$day_of_week <- format(as.Date(biketrip_2021$date), "%A")
 ```
-> **Analyze**
-
 
 I calculated the length of each ride:
 ```
