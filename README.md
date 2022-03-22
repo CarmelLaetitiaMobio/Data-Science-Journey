@@ -63,6 +63,30 @@ library(data.table)#add columns/large data
 library(janitor)#cleaning dirty table
 library(lealflet)#mapping
 
+##upload all .csv files on R
+
+m1<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202101-divvy-tripdata.csv")
+m2<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202102-divvy-tripdata.csv")
+m3<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202103-divvy-tripdata.csv")
+m4<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202104-divvy-tripdata.csv")
+m5<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202105-divvy-tripdata.csv")
+m6<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202106-divvy-tripdata.csv")
+m7<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202107-divvy-tripdata.csv")
+m8<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202108-divvy-tripdata.csv")
+m9<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202109-divvy-tripdata.csv")
+m10<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202110-divvy-tripdata.csv")
+m11<-read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202111-divvy-tripdata.csv")
+m12<- read.csv("C:\Users\carme\OneDrive\Documents\R work\p1\datacyc\Project1\divvy-trip data\202112-divvy-tripdata.csv")
+
+##Clean the data 
+
+
+##Combine the files together in one database
+
+all_trips <- bind_rows(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12)
+
+
+
 
 
 
