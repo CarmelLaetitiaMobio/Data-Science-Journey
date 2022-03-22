@@ -112,13 +112,14 @@ biketrip_2021<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021
 
 # mean,median,25th and 75th quartiles,min,max
 summary(biketrip_2021)
-
-
+``
+```
 #table for member and casual trips 
 table(biketrip_2021$member_casual) 
 # table for bike type
 table(biketrip_2021$rideable_type)
-
+```
+```
 #some more data
 #date for all the biketrip_display month of January
 biketrip_2021$date <- as.Date(biketrip_2021$started_at)
@@ -126,14 +127,11 @@ biketrip_2021$month <- format(as.Date(biketrip_2021$date), "%m")
 biketrip_2021$day <- format(as.Date(biketrip_2021$date), "%d")
 biketrip_2021$year <- format(as.Date(biketrip_2021$date), "%Y")
 biketrip_2021$day_of_week <- format(as.Date(biketrip_2021$date), "%A")
-
+```
+```
 #calculate ride length
 biketrip_2021$ride_length <- difftime(biketrip_2021$ended_at, biketrip_2021$started_at)
 biketrip_2021_v2 <- biketrip_2021[!(biketrip_2021$rideable_type == "docked_bike" | biketrip_2021$ride_length<0),]
-
-
-
-
 ```
 
 
