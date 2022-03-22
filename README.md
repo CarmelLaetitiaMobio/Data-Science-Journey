@@ -101,11 +101,13 @@ all_trips<-bind_rows(m1_2021,m2_2021,m3_2021,m4_2021,m5_2021,m6_2021,m7_2021,m8_
 
 ##descriptive analysis
 
-
 # mean,median,25th and 75th quartiles,min,max
 summary(biketrip_2021)
 
-
+#table for member and casual trips 
+table(biketrip_2021$member_casual) 
+# table for bike type
+table(biketrip_2021$rideable_type)
 
 
 
